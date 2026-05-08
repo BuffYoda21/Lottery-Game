@@ -1,0 +1,9 @@
+#  CSharp formatting rules:
+[*.cs]
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+
+# CS0162: Unreachable code detected
+dotnet_diagnostic.CS0162.severity = silent
