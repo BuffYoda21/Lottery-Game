@@ -402,6 +402,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1544933462}
+  - component: {fileID: 1544933463}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -425,6 +426,33 @@ Transform:
   - {fileID: 1811322845}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1544933463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544933461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf59b74a6d49c4e97d5f0fd3d792f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player
+  numRolled: -1
+  isRolling: 0
+  hp: 100
+  maxHp: 100
+  sprites:
+  - {fileID: 4735159207764824648, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -5967588698049459522, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -8741736759449166902, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: 8219664417722280758, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -8090542706501692443, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: 3860269627671160696, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -2352580425191025873, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: 4559721802418485680, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -8091355947993660247, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
+  - {fileID: -2893824736915770460, guid: 534cb0a77d409b944919bb0f0eaaa1c6, type: 3}
 --- !u!1 &1811322844
 GameObject:
   m_ObjectHideFlags: 0

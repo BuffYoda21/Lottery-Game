@@ -8,6 +8,11 @@ public class SpriteBank : MonoBehaviour {
         GameManager.spriteBank = this;
     }
 
+    // not related to sprite bank but time crunch and i needed it subscribed to the update cycle
+    void Update() {
+        GameManager.Update();
+    }
+
     public Sprite GetSprite(int index) {
         return spritesList[index];
     }

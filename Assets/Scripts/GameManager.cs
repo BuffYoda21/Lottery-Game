@@ -60,6 +60,48 @@ public static class GameManager {
                 sr.sprite = spriteBank.GetSprite(i + 1);
             }
         }
+        rollStart = Time.time + 3f;
+    }
+
+    public static void Update() {
+        if (gameState == GameState.Lottery && Time.time > rollStart && rollStart != -1f) {
+            foreach (Player p in playerControllers) {
+                p.Roll();
+            }
+            rollStart = -1f;
+            waitingForRollToFinish = true;
+        } else if (waitingForRollToFinish) {
+            bool finished = true;
+            foreach (Player p in playerControllers) {
+                if (p.isRolling)
+                    finished = false;
+            }
+            if (finished) {
+                waitingForRollToFinish = false;
+                int highestScore = -1;
+                int highestPlayer = -1;
+                for (int i = 0; i < playerControllers.Count; i++) {
+                    if (playerControllers[i].GetScore() > highestScore) {
+                        highestScore = playerControllers[i].GetScore();
+                        highestPlayer = i;
+                    }
+                }
+                bool tie = false;
+                for (int i = 0; i < playerControllers.Count; i++) {
+                    if (playerControllers[i].GetScore() == highestScore && i != highestPlayer) {
+                        tie = true;
+                        break;
+                    }
+                }
+                if (tie) {
+                    rollStart = Time.time + 3f;
+                    return;
+                }
+                selectedPlayer = highestPlayer;
+                Debug.Log($"Player {selectedPlayer + 1} wins with {highestScore}");
+                // move to stone phase
+            }
+        }
     }
 
 
@@ -70,11 +112,14 @@ public static class GameManager {
         GameOver,
     }
 
+    private static float rollStart = -1f;
+    private static bool waitingForRollToFinish = false;
     public static int playerCount = 1;
     public static int selectedPlayer = 0;
     public static bool botPlaying = false;
     public static GameState gameState = GameState.Title;
     private static List<GameObject> players = new();
+    public static List<Player> playerControllers = new();
     public static List<Sprite> playerNames = new();
     public static SpriteBank spriteBank;
 }
