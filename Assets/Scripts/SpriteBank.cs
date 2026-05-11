@@ -4,6 +4,10 @@ using UnityEngine;
 // just a quick and ditry way to solve my problems cause i am on a time crunch
 public class SpriteBank : MonoBehaviour {
     void Awake() {
+        if (GameManager.spriteBank != null) {
+            Destroy(gameObject);
+            return;
+        }
         DontDestroyOnLoad(gameObject);
         GameManager.spriteBank = this;
     }

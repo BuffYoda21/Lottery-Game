@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -613,17 +613,17 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 13.200012}
     m_SelectedIDs:
-    - m_Data: 52038
+    - m_Data: 52428
     m_LastClickedID:
-      m_Data: 52038
+      m_Data: 52428
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52116
-    - m_Data: 52118
-    - m_Data: 52120
-    - m_Data: 52122
-    - m_Data: 52124
-    - m_Data: 52126
+    - m_Data: 51866
+    - m_Data: 51868
+    - m_Data: 51870
+    - m_Data: 51872
+    - m_Data: 51874
+    - m_Data: 51876
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -657,12 +657,12 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52116
-    - m_Data: 52118
-    - m_Data: 52120
-    - m_Data: 52122
-    - m_Data: 52124
-    - m_Data: 52126
+    - m_Data: 51866
+    - m_Data: 51868
+    - m_Data: 51870
+    - m_Data: 51872
+    - m_Data: 51874
+    - m_Data: 51876
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -691,9 +691,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -1384
+    - m_Data: -1420
     m_LastClickedEntityId:
-      m_Data: -1384
+      m_Data: -1420
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 76502
@@ -826,21 +826,21 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -18866
-      - m_Data: -1384
-      - m_Data: -1382
-      - m_Data: -12
-      - m_Data: 52254
-      - m_Data: 52258
-      - m_Data: 54260
-      - m_Data: 55228
-      - m_Data: 55232
-      - m_Data: 55384
-      - m_Data: 55678
-      - m_Data: 55682
-      - m_Data: 55866
-      - m_Data: 58488
-      - m_Data: 58492
+      - m_Data: -42646
+      - m_Data: -29526
+      - m_Data: -16620
+      - m_Data: -11078
+      - m_Data: -4678
+      - m_Data: -4672
+      - m_Data: -4622
+      - m_Data: -1420
+      - m_Data: -1418
+      - m_Data: 54480
+      - m_Data: 54486
+      - m_Data: 58628
+      - m_Data: 60208
+      - m_Data: 60966
+      - m_Data: 65454
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1619,10 +1619,10 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
-    m_HSlider: 0
+    m_HSlider: 1
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
+    m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1

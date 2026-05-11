@@ -5,7 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour {
     void Start() {
         ticket = transform.Find("guy/number").GetComponent<SpriteRenderer>();
-        GameManager.playerControllers.Add(this);
     }
 
     public void Roll() {
